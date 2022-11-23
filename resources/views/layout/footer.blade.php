@@ -1,37 +1,139 @@
 <footer >
-  <div class="footer">
-     <div class="container">
-        <div class="row">
-           <div class="col-md-8 offset-md-2">
-              <div class="cont">
-                 <h3>Free Multipurpose <br>
-                    Responsive Landing Page 2019
-                 </h3>
-                 <p>Modern lighting fast & easily Customizable</p>
-                 <a class="read_more" href="#">Get A Quote</a>
-              </div>
+ <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container-fluid my-5">
+
+   <!-- Footer -->
+   <footer
+           class="text-center text-lg-start text-white"
+           style="background-color: #1c2331"
+           >
+     <!-- Section: Social media -->
+     <section
+              class="d-flex justify-content-between p-4"
+              style="background-color: #6351ce"
+              >
+       <!-- Left -->
+       <div class="me-5">
+         <span>Get connected with us on social networks:</span>
+       </div>
+       <!-- Left -->
+ 
+     
+     </section>
+     <!-- Section: Social media -->
+ 
+     <!-- Section: Links  -->
+     <section class="">
+       <div class="container text-center text-md-start mt-5">
+         <!-- Grid row -->
+         <div class="row mt-3">
+           <!-- Grid column -->
+           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+             <!-- Content -->
+             <h6 class="text-uppercase fw-bold">Company name</h6>
+             <hr
+                 class="mb-4 mt-0 d-inline-block mx-auto"
+                 style="width: 60px; background-color: #7c4dff; height: 2px"
+                 />
+             <p>
+               Here you can use rows and columns to organize your footer
+               content. Lorem ipsum dolor sit amet, consectetur adipisicing
+               elit.
+             </p>
            </div>
-        </div>
-     </div>
-     <div class="copyright">
-        <div class="container">
-           <div class="row">
-              <div class="col-md-12">
-                 <p>© 2019 All Rights Reserved. Design by <a href="https://html.design/"> Free Html Templates</a></p>
-              </div>
+           <!-- Grid column -->
+ 
+           <!-- Grid column -->
+           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+             <!-- Links -->
+             <h6 class="text-uppercase fw-bold">Products</h6>
+             <hr
+                 class="mb-4 mt-0 d-inline-block mx-auto"
+                 style="width: 60px; background-color: #7c4dff; height: 2px"
+                 />
+             <p>
+               <a href="#!" class="text-white">MDBootstrap</a>
+             </p>
+             <p>
+               <a href="#!" class="text-white">MDWordPress</a>
+             </p>
+             <p>
+               <a href="#!" class="text-white">BrandFlow</a>
+             </p>
+             <p>
+               <a href="#!" class="text-white">Bootstrap Angular</a>
+             </p>
            </div>
-        </div>
+           <!-- Grid column -->
+ 
+           <!-- Grid column -->
+           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+             <!-- Links -->
+             <h6 class="text-uppercase fw-bold">Useful links</h6>
+             <hr
+                 class="mb-4 mt-0 d-inline-block mx-auto"
+                 style="width: 60px; background-color: #7c4dff; height: 2px"
+                 />
+             <p>
+               <a href="#!" class="text-white">Your Account</a>
+             </p>
+             <p>
+               <a href="#!" class="text-white">Become an Affiliate</a>
+             </p>
+             <p>
+               <a href="#!" class="text-white">Shipping Rates</a>
+             </p>
+             <p>
+               <a href="#!" class="text-white">Help</a>
+             </p>
+           </div>
+           <!-- Grid column -->
+ 
+           <!-- Grid column -->
+           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+             <!-- Links -->
+             <h6 class="text-uppercase fw-bold">Contact</h6>
+             <hr
+                 class="mb-4 mt-0 d-inline-block mx-auto"
+                 style="width: 60px; background-color: #7c4dff; height: 2px"
+                 />
+             <p>New York, NY 10012, US</p>
+             <p>info@example.com</p>
+             <p> + 01 234 567 88</p>
+             <p> + 01 234 567 89</p>
+           </div>
+           <!-- Grid column -->
+         </div>
+         <!-- Grid row -->
+       </div>
+     </section>
+     <!-- Section: Links  -->
+ 
+     <!-- Copyright -->
+     <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+          >
+       © 2020 Copyright:
+       <a class="text-white" href="https://mdbootstrap.com/"
+          >MDBootstrap.com</a
+         >
      </div>
-  </div>
+     <!-- Copyright -->
+   </footer>
+   <!-- Footer -->
+ 
+ </div>
+ <!-- End of .container -->
 </footer>
 <!-- end footer -->
 <!-- Javascript files-->
-<script src="/project/resources/js/jquery.min.js"></script>
-<script src="/project/resources/js/popper.min.js"></script>
-<script src="/project/resources/js/bootstrap.bundle.min.js"></script>
-<script src="/project/resources/js/jquery-3.0.0.min.js"></script>
-<script src="/project/resources/js/plugin.js"></script>
+<script src="{{url('frontend/js/jquery.min.js')}}"></script>
+<script src="{{url('frontend/js/popper.min.js')}}"></script>
+<script src="{{url('frontend/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{url('frontend/js/jquery-3.0.0.min.js')}}"></script>
+<script src="{{url('frontend/js/plugin.js')}}"></script>
 <!-- sidebar -->
-<script src="/project/resources/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="{{url('frontend/js/jquery.mCustomScrollbar.concat.min.js')}}"></script>
 <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-<script src="/project/resources/js/custom.js"></script>
+<script src="{{url('frontend/js/custom.js ')}}"></script>
