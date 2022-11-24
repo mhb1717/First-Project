@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Basecontroller;
-
+use App\Http\Controllers\Careercontroller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -45,3 +45,6 @@ Route::get('/home', [Basecontroller::class, 'home']);
 Route::get('/index', [Basecontroller::class, 'index']);
 Route::get('/login', [Basecontroller::class, 'login_page']);
 Route::post('/login', [Basecontroller::class, 'login']);
+Route::get('/signout', [Basecontroller::class, 'signOut']);
+Route::get('/career', [Careercontroller::class, 'career_page']);
+Route::post('/career', [Careercontroller::class, 'career']);

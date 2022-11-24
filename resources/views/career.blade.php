@@ -7,9 +7,10 @@
                 <div class="row justify-content-center">
                     <div class="col-md-4">
                         <div class="card">
-                            <h3 class="card-header text-center">Register</h3>
+                            <h3 class="card-header text-center">Career</h3>
                             <div class="card-body">
-                                <form action="{{ url('/') }}/registor" method="POST" class="px-md-2">
+                                <form action="{{ url('/') }}/career" method="POST" class="px-md-2"
+                                    enctype="multipart/form-data">
                                     @csrf
                                     <div class="form-group mb-3">
                                         <input type="text" placeholder="name" id="name" class="form-control"
@@ -19,17 +20,34 @@
                                         @endif
                                     </div>
                                     <div class="form-group mb-3">
+                                        <input type="email" placeholder="email" id="email" class="form-control"
+                                            name="email">
+                                        @if ($errors->has('email'))
+                                            <span class="text-danger">{{ $errors->first('email') }}</span>
+                                        @endif
+                                    </div>
+                                    <div class="form-group mb-3">
                                         <input type="password" placeholder="Password" id="password" class="form-control"
                                             name="password">
                                         @if ($errors->has('password'))
                                             <span class="text-danger">{{ $errors->first('password') }}</span>
                                         @endif
                                     </div>
+
                                     <div class="form-group mb-3">
-                                        <input type="password_confirmation" placeholder="confrim password"
-                                            id="password_confirmation" class="form-control" name="password_confirmation">
+                                        <input type="password" placeholder="confrim password" id="password_confirmation"
+                                            class="form-control" name="password_confirmation">
                                         @if ($errors->has('password_confirmation'))
                                             <span class="text-danger">{{ $errors->first('password_confirmation') }}</span>
+                                        @endif
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFileMultiple" class="form-label">Multiple files input
+                                            example</label>
+                                        <input class="form-control" name="file" type="file" id="formFileMultiple"
+                                            multiple>
+                                        @if ($errors->has('file'))
+                                            <span class="text-danger">{{ $errors->first('file') }}</span>
                                         @endif
                                     </div>
                                     <div class="form-group mb-3">
@@ -40,7 +58,7 @@
                                         </div>
                                     </div>
                                     <div class="d-grid mx-auto">
-                                        <button type="submit" class="btn btn-dark btn-block">Signup</button>
+                                        <button type="submit" class="btn btn-dark btn-block">Submit</button>
                                     </div>
                                 </form>
                             </div>

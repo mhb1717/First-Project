@@ -30,8 +30,8 @@ class Basecontroller extends Controller
     {
         $request->validate([
             'name' => 'required',
-
-            'password' => 'required|min:6',
+            'password' => 'min:6',
+            'password_confirmation' => 'required_with:password|same:password|min:6'
         ]);
 
         $data = $request->all();
@@ -49,10 +49,7 @@ class Basecontroller extends Controller
     }
     public function login(Request $request)
     {
-        $request->validate([
-            'name' => 'required',
-            'password' => 'required',
-        ]);
+
 
         $credentials = $request->only('name', 'password');
         if (Auth::attempt($credentials)) {
@@ -62,4 +59,9 @@ class Basecontroller extends Controller
 
         return redirect("login")->withSuccess('Login details are not valid');
     }
+
+
+    // session
+
+
 }

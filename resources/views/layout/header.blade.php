@@ -49,10 +49,16 @@
                                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                                     </li>
                                     <li class="nav-item">
+                                        <a class="nav-link" href="{{ url('/career') }}">career</a>
+
+                                    </li>
+
+                                    <li class="nav-item">
                                         <a class="nav-link" href="{{ url('/login') }}">login</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="{{ url('/registor') }}">register</a>
+
                                     </li>
 
                                 </ul>
