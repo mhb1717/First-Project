@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Hash;
 use App\Models\User;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+
 
 class Basecontroller extends Controller
 {
@@ -53,15 +55,19 @@ class Basecontroller extends Controller
 
         $credentials = $request->only('name', 'password');
         if (Auth::attempt($credentials)) {
+            $data = $request->input();
+            $request->session()->put('user', $data['name']);
             return redirect()->intended('index')
                 ->withSuccess('Signed in');
         }
 
         return redirect("login")->withSuccess('Login details are not valid');
     }
+    public function signOut()
+    {
+        Session::flush();
+        Auth::logout();
 
-
-    // session
-
-
+        return Redirect('login');
+    }
 }

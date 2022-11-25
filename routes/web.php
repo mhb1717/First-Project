@@ -48,3 +48,4 @@ Route::post('/login', [Basecontroller::class, 'login']);
 Route::get('/signout', [Basecontroller::class, 'signOut']);
 Route::get('/career', [Careercontroller::class, 'career_page']);
 Route::post('/career', [Careercontroller::class, 'career']);
+Route::get('/signout', [Basecontroller::class, 'signOut']);
